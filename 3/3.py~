@@ -1,0 +1,19 @@
+import math
+
+SAMPLE = 600851475143
+LIMIT = math.sqrt(SAMPLE)
+factors = []
+
+d = 2
+
+while d <= LIMIT:
+    print d
+    if SAMPLE % d == 0:
+        print " HERE"
+        factors.append(d)
+    d += 1
+
+
+print max(factors)
+
+
